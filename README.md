@@ -1,5 +1,7 @@
 # MultiCriteriaSort
 
+[![Build Status](https://travis-ci.org/analyzere/MultiCriteriaSort.jl.png)](https://travis-ci.org/analyzere/MultiCriteriaSort.jl)
+
 This is package extends the capabilities of the sorting functions to sort entire matrices on a set of columns/rows that are defined in set terms of descending priority.
 
 ## New Sorting Methods
@@ -15,5 +17,3 @@ sort(a, [1:3])
 Similarly to get the row permutation to sort the matrix use `sortperm(a, [1:3])`.
 
 Each function is given an optional `dim::Int` argument which defines which dimension to sort (i.e. 1 = sort rows by values in given columns and 2 = sort columns by values in given rows). To sort the columns in matrix `a` by rows 1 and 2 use `sort(a, [1,2], dim = 2)`. 
-
-[![Build Status](https://travis-ci.org/analyzere/MultiCriteriaSort.png)](https://travis-ci.org/analyzere/MultiCriteriaSort.jl)
